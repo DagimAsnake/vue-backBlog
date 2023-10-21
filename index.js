@@ -33,4 +33,6 @@ app.use(function (req, res, next) {
 });
 app.use(cors());
 
+const blogRouter = require('./routes/blog')
 
+app.use('/blog', blogRouter)
